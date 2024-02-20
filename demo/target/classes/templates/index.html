@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+       footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 12px;
+            color: #777;
+        }
+        
+        
+        
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Calculate Your Attendance</h1>
+    <form action="/calculate-attendance" method="post">
+		<h5>IF YOU DO NOT HAVE ANY COMPONENT BELOW , PLEASE DON'T GIVE ANY VALUE</h5>
+		
+		
+        <label for="lecture"> Lecture Percentage:</label>
+        <input type="number" id="lecture" name="lecture" placeholder="Enter number of lectures">
+
+        <label for="skill"> Skill Percentage:</label>
+        <input type="number" id="skill" name="skill" placeholder="Enter number of skill sessions">
+
+        <label for="lab"> Lab Percentage:</label>
+        <input type="number" id="lab" name="lab" placeholder="Enter number of lab sessions">
+
+        <label for="tutorial"> Tutorial Percentage:</label>
+        <input type="number" id="tutorial" name="tutorial" placeholder="Enter number of tutorials">
+
+        <button type="submit">Calculate</button>
+    </form>
+    
+    <footer>
+        &copy; 2024, 2100030159, Abhi_Garlapati
+    </footer>
+    
+</div>
+
+</body>
+</html>
